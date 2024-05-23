@@ -1,0 +1,285 @@
+body{
+    font-family: sans-serif;
+}
+.CatePop{
+    width: 700px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    position: fixed;
+    filter: drop-shadow(1px 1px 5px);
+    z-index: 10000;
+    top: 120px;
+    left: 26%;
+    border-radius: 5px;
+}
+.CatePop{
+display: none;
+}
+
+#hover_cat{
+    height: 50px;
+}
+
+
+.cateAside{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+   
+}
+.cateAside .cateAside-left{
+    width: 30%;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.cateAside .cateAside-left::-webkit-scrollbar{
+    display: none;
+}
+.cateAside .cateAside-left a{
+    text-decoration: none;
+    color: black;
+}
+.cateAside .cateAside-left a .asidecate1{
+    display: flex;
+    height: 20px;
+    padding: 2px;
+    margin: 10px 0px;
+    width: 90%;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.asidecate1:hover{
+    background-color: rgb(240, 240, 240);
+}
+.cateAside .cateAside-left a .asidecate1 i{
+    font-size: 10px;
+}
+.cateAside .cateAside-mid{
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30.2%;
+    background-color: rgb(213, 211, 211);
+}
+
+.cateAside .cateAside-right{
+    width: 69%;
+    height: 95%;
+    padding: 10px;
+    overflow: scroll;
+    position: absolute;
+    border-radius: 5px;
+  
+    top: 0;
+    left: 31%;
+}
+.cateAside .cateAside-right::-webkit-scrollbar{
+    display: none;
+
+}
+.cateAside .cateAside-right .FeaturePage1 a{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+}
+.cateAside .cateAside-right .FeaturePage1 a:hover{
+    text-decoration: underline;
+}
+.cateAside .cateAside-right .FeaturePage1 i{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.FeaturePage1{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.FeaturePage2{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+.Cloth1{
+    width: 100%;
+    height: 130px;
+
+}
+.cloth-a{
+    width: 100%;
+    height: 130px;
+    margin-top: 20px;
+}
+.img1{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.img1 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+}
+.cloth-b{
+    color: black;
+    font-size: 12px;
+    padding-top: 5px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.shopF{
+    font-size: 18px;
+    color: black;
+    margin-top: 5px;
+}
+.FeaturePage3{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+.squer{
+    width: 15px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: -5px;
+    left: 15%;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+}
+
+.SuportPop{
+    position: fixed;
+    top: 115px;
+    right: 8%;
+    z-index: 10000;
+    width: 280px;
+    display: none;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(2px 2px 5px);
+}
+.suportItem{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    overflow: hidden;
+    top: 10%;
+    text-align: start;
+
+}
+.suportItem p{
+    font-size: 16px;
+    color: gray;
+    padding-left: 20px;
+    
+}
+.suportItem p:hover{
+    background-color: rgb(243, 239, 239);
+
+}
+.squer1{
+    width: 20px;
+    aspect-ratio: 1/1;
+    transform: rotate(45deg);
+    z-index: 1000;
+    position: absolute;
+    top: -5px;
+    left: 43%;
+    background-color: rgb(255, 255, 255);
+}
+.LanguagePop{
+    top: 115px;
+    position: fixed;
+    right: 3%;
+    width: 300px;
+    display: none;
+    z-index: 10000;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(2px 2px 5px);
+}
+.langItem{
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    overflow: hidden;
+    top: 10%;
+    text-align: start;
+
+}
+.langItem div{
+    font-size: 16px;
+    color: gray;
+    padding-left: 20px;
+    
+}
+.langItem div input{
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+}
+.langItem div img{
+    width: 20px;
+    height: 20px;
+}
+.langItem div button{
+    border: 1px solid rgb(86, 84, 84);
+    border-radius: 30px;
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+    padding:3px 8px;
+    background-color: transparent;
+}
+.langItem div button:hover{
+    border: 2px solid gray;
+}
+.squer2{
+    width: 20px;
+    aspect-ratio: 1/1;
+    transform: rotate(45deg);
+    z-index: 1000;
+    position: absolute;
+    top: -5px;
+    left: 43%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:550px) {
+
+    .CatePop{
+        width: 700px;
+        height: 550px;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        position: fixed;
+        filter: drop-shadow(1px 1px 5px);
+        z-index: 10000;
+        top: 120px;
+        display: none;
+        left: 26%;
+        border-radius: 5px;
+    }
+}

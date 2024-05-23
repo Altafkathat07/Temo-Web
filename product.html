@@ -1,0 +1,363 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bagn | shop for Clothing, Shoes, jewelry, Beauty & More </title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="single.css">
+      <link rel="stylesheet" href="crousel.css">
+      <link rel="stylesheet" href="footer.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   <body>
+       <!-- header Section start here -->
+      <div class="container-fluid px-0">
+         <div class="headMain">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-4">
+                     <div class="freeShip">
+                        <div class="free">
+                           <img src="{{asset('assests/img1.webp')}}" alt="track png">
+                           <span class="span1">Free Shipping</span><br>
+                           <span class="span2">On all orders</span>
+                           <div class="countdown">
+                              <div id="hours" class="flip-card">
+                                 <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                       <span id="hours-value">00</span>
+                                    </div>
+                                    <div class="flip-card-back">
+                                       <span id="hours-value-back">00 </span>
+                                       <span style="color: white;"></span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="minutes" class="flip-card">
+                                 <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                       <span id="minutes-value">00</span>
+                                    </div>
+                                    <div class="flip-card-back">
+                                       <span id="minutes-value-back">00</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="seconds" class="flip-card">
+                                 <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                       <span id="seconds-value">00</span>
+                                    </div>
+                                    <div class="flip-card-back">
+                                       <span id="seconds-value-back">00</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bor"></div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4">
+                     <div class="pay">
+                        <div class="pay1">
+                           <img src="{{asset('assests/86987e2c-6cfc-4955-b816-11fca50f795f.png.slim.webp')}}" alt="">
+                           <span class="span3">Free returns</span><br>
+                           <span class="span4">Within 90 days</span>
+                        </div>
+                        <div class="pay2">
+                           <img src="{{asset('assests/7c2ba34f-7e25-42b2-9df3-a33c20a08c56.webp')}}" alt="">
+                           <span class="span3">Prices adjustment</span><br>
+                           <span class="span4">Within 30 days</span>
+                        </div>
+                     </div>
+                     <div class="bor2"></div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4">
+                     <div class="mob">
+                        <img src="{{asset('assests/mob.webp')}}" alt="">
+                        <span class="span5">Get the Temu App</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="Header">
+               <div class="container px-0">
+                  <div id="Head">
+                     <div class="row">
+                        <div class="navBar">
+                           <span> <img src="{{asset('assests/c9653751-0a91-46f1-806a-b639dd32931b.png.slim.png')}}" alt=""> </span>
+                           <ul>
+                              <a href="">
+                                 <li>Best sellers</li>
+                              </a>
+                              <a href="">
+                                 <li><img src="" alt="">5 star Rated</li>
+                              </a>
+                              <a href="">
+                                 <li>New Arrivals</li>
+                              </a>
+                              <a href="">
+                                 <li>Categries <img src="" alt=""></li>
+                              </a>
+                           </ul>
+                           <div class="inp">
+                              <input type="text" name="" value="" placeholder="aesthetic room decor">
+                              <div class="searchI"> <a href=""><span><i class="fa fa-search"
+                                 aria-hidden="true"></i></span></a></div>
+                           </div>
+                           <i class="fa fa-user-circle" aria-hidden="true"></i> <span class="account">Order &
+                           <br><span class="acc">Account</span></span>
+                           <a href="" class="support"> <img src="{{asset('assests/icons8-message-96.png')}}" alt="" class="sup">
+                           </a><span class="supp">Suport </span>
+                           <span class="luag"><a href=""><img id="eng" src="{{asset('assests/icon-english-7.jpg')}}" alt=""><a
+                              class="en">En</a></a></span>
+                           <span class="cart"><img id="cart2" src="{{asset('assests/icons8-cart-100.png')}}" alt=""></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ----------------------------------------Second header------------------------------------------------  -->
+      <div class="secondhead">
+         <a href="">TEMU</a>
+         <a href=""><span><i class="fa fa-search" aria-hidden="true"></i> Search</span><i
+            class="fa-solid fa-bars"></i></a>
+         <a href=""><img src="{{asset('assests/favicon.ico')}}" alt=""></a>
+         <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+         <div>
+            <ul>
+               <a href="">
+                  <li>All</li>
+               </a>
+               <a href="">
+                  <li>Electronic</li>
+               </a>
+               <a href="">
+                  <li>Women</li>
+               </a>
+               <a href="">
+                  <li>Home</li>
+               </a>
+               <a href="">
+                  <li>Men</li>
+               </a>
+               <a href="">
+                  <li>Jewelry</li>
+               </a>
+            </ul>
+         </div>
+      </div>
+
+
+
+      <div class="main_Section">
+      <div class="container mt-4">
+        <div class="ASIDE">
+        <div class="left-aside">
+            <div class="left-aside1">
+              
+                <div class="img1">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+                <div class="img2">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+                <div class="img3">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+                <div class="img4">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+                <div class="img5">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+                <div class="img6">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+                <div class="img7">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+                <div class="img8">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+                <div class="img9">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+                <div class="img10">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+                <div class="img11">
+                    <img src="close-up-man-looking-his-watch.jpg" alt="">
+                </div>
+            </div>
+            <div class="left-aside2">
+                <div class="like">
+                    <i class="fa-regular fa-heart" onclick="like()" id="icon"></i>
+                </div>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="close-up-man-looking-his-watch.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="close-up-man-looking-his-watch.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="close-up-man-looking-his-watch.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev prev1" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next next1" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="rateStar">
+                <div class="shopP">203 shop review </div><div class="rating-stars" onclick="handleRating(event)" style="padding-left: 20px;"><span style="font-size: 20px; color: black;">5.0</span>
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <div class="veri">All reviews are from verified buyer</div>
+            </div>
+        
+    <div class="divImage">
+    
+        <div class="divimg1"><img src="close-up-man-looking-his-watch.jpg" alt=""></div>
+        <div class="divimg1"><img src="close-up-man-looking-his-watch.jpg" alt=""></div>
+        <div class="divimg1"><img src="close-up-man-looking-his-watch.jpg" alt=""></div>
+        <div class="divimg1"><img src="close-up-man-looking-his-watch.jpg" alt=""></div>
+        <div class="divimg1"><img src="close-up-man-looking-his-watch.jpg" alt=""></div>
+        <div class="divimg1"><img src="close-up-man-looking-his-watch.jpg" alt=""></div>
+    </div>
+    
+        </div>
+        <div class="right-aside">
+            <div id="productName">
+                <p>Smart Watch Bands For Apple Watch 44mm 40mm 49mm 38mm 45mm 41mm 42mm Womens Mens Sport Two-Tone Silicone Strap + Magnetic D-Clasp Replacement Wristband For Apple Watch Series 8/Ultra/7/SE/6/ 5/4/3/2/1, IWatch Strap</p>
+                <a href=""><i class="fa-solid fa-upload"></i></a>
+            </div>
+            <div class="review">
+                <span> <span class="sold">1.4k+ sold by</span> <a href=""> Maishan (65k+ sold) ></a></span>  <div id="starR"> 
+                     <div class="rating-container">
+                    <div class="rating-stars" onclick="handleRating(event)">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <span
+                        style="color: gray; font-size: 12px; padding-left: 10px;">(32)</span>
+                </div>  
+                    
+        </div>
+        </div>
+        <div class="price mt-2"> <span class="p1">7.68$</span> <button>-70%</button> <strike>19.20$</strike></div> 
+        <div class="color mt-2">
+            <p>Color :</p>
+            <div> <span><img src="/w3.webp" alt=""></span> <span><img src="/w4.webp" alt=""></span></div>
+    
+        </div>
+        <div class="size">
+            <button class="size1">38mm 40mm 41mm</button>
+            <button class="size2">42mm 44mm 45mm 49mm</button>
+        </div>
+        <div class="Qty" >Qty : 
+            <select name="" id="select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+            </select>
+            
+       </div> 
+       <div class="addCart mt-3">
+        <button>Add to  card</button>
+       </div>
+    
+       <div class="shipping mt-4">
+        <div class="ship1 py-3">Shipping & Return</div>
+        <div> <i class="fa-solid fa-truck"></i><a href=""> Shipping </a> <i class="fa-solid fa-chevron-right"></i> </div>
+        <div class="shipDiv mt-4">
+            <div class="shipDiv1">
+                <div style="color: green;">Stander: free on orders</div>
+                <div>Courier Company: <span><img src="usps.webp" alt="">USPS</span>| <span><img src="ups.webp" alt="">UPS</span>| 11+</div>
+                <div>Delivery  23-20 july, <span>80.9% are < 10 days</span></div>
+                <div>Get a $5 credit for late delivery</div>
+            </div>
+        <div class="shipDiv2">
+            <div><span>Express: $12.9 (orders < $129);</span></div>
+            <div style="color: green;">free (order > $129)</div>
+            <div>Courier Company: <span><img src="usps.webp" alt="">USPS</span>| <span><img src="ups.webp" alt="">UPS</span>| 11+</div>
+            <div>Delivery  23-20 july, <span>80.9% are < 10 days</span></div>
+            <div>Get a $5 credit for late delivery</div>
+        </div>
+        </div>
+       </div>
+    
+       <div class="return mt-4"> <img src="return.webp" alt=""><a href=""> Free returns . price adjustment </a> <i class="fa-solid fa-chevron-right"></i></div>
+       <div class="temu mt-3">Bagn is committed to environmental sustainability</div>
+       <hr>
+       <div class="shopping mt-4">
+        <div class="shop1 py-3">Shop with confidance</div>
+        <div ><i class="fa-solid fa-shield-halved"></i><a href=""> Shoppin security</a> <i class="fa-solid fa-chevron-right"></i> </div>
+        <ul>
+            <li>safe payment</li>
+            <li>secure logistics</li>
+            <li>safe payment</li>
+            <li>secure logistics</li>
+        </ul>
+        <hr>
+    
+        <div class="decs">
+            <p class="decs1 py-2">Description</p>
+            <p>Item ID: WQ15423 <button>Copy</button></p>
+            <p>Material: Two-tone-stainless-steel</p>
+            <p>Clasp Type: Foldover clasp</p>
+            <p>Battery Properties: Without Battery</p>
+    
+        </div>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+ 
+ </body>
+ </html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagn | shop for Clothing, Shoes, jewelry, Beauty & More </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+     <link rel="stylesheet" href="product.css">
+     <link rel="stylesheet" href="ImageSlider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+.product-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  /* Hide the scrollbar and allow smooth scrolling */
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Hide the scrollbar for webkit browsers */
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.product-item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: #f0f0f0;
+}
+.product-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  /* Hide the scrollbar and allow smooth scrolling */
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Hide the scrollbar for webkit browsers */
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.product-item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: #f0f0f0;
+}
+
+
+</style>
+
+<body>
+  <!-- <ul id="autoWidth" class="cs-hidden">
+    <li class="item-a">
+      <div class="Products">
+                        
+        <div class="product1">
+            <div class="product_items">
+                <div class="imgDiv"><img src="p2.webp" alt="headphone"></div>
+                <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                        style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                    time offer</div>
+                <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                    <span class="p2">312 sold</span> <button>-60%</button>
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <div class="rating-container">
+                            <div class="rating-line" onclick="handleRating(event)">
+                                <div class="rating-bar"></div>
+                                <div class="rating-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="font-size: 12px; font-weight: lighter; color: gray;">
+                        In demand</div>
+                    <div>
+                        <div class="rating-container">
+                            <div class="rating-stars" onclick="handleRating(event)">
+                                <span class="star" data-value="1">&#9733;</span>
+                                <span class="star" data-value="2">&#9733;</span>
+                                <span class="star" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                            <span
+                                style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </li>
+    <li class="item-a">
+      <div class="Products">
+                        
+        <div class="product1">
+            <div class="product_items">
+                <div class="imgDiv"><img src="p2.webp" alt="headphone"></div>
+                <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                        style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                    time offer</div>
+                <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                    <span class="p2">312 sold</span> <button>-60%</button>
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <div class="rating-container">
+                            <div class="rating-line" onclick="handleRating(event)">
+                                <div class="rating-bar"></div>
+                                <div class="rating-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="font-size: 12px; font-weight: lighter; color: gray;">
+                        In demand</div>
+                    <div>
+                        <div class="rating-container">
+                            <div class="rating-stars" onclick="handleRating(event)">
+                                <span class="star" data-value="1">&#9733;</span>
+                                <span class="star" data-value="2">&#9733;</span>
+                                <span class="star" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                            <span
+                                style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </li>
+    <li class="item-a">
+      <div class="Products">
+                        
+        <div class="product1">
+            <div class="product_items">
+                <div class="imgDiv"><img src="p2.webp" alt="headphone"></div>
+                <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                        style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                    time offer</div>
+                <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                    <span class="p2">312 sold</span> <button>-60%</button>
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <div class="rating-container">
+                            <div class="rating-line" onclick="handleRating(event)">
+                                <div class="rating-bar"></div>
+                                <div class="rating-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="font-size: 12px; font-weight: lighter; color: gray;">
+                        In demand</div>
+                    <div>
+                        <div class="rating-container">
+                            <div class="rating-stars" onclick="handleRating(event)">
+                                <span class="star" data-value="1">&#9733;</span>
+                                <span class="star" data-value="2">&#9733;</span>
+                                <span class="star" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                            <span
+                                style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </li>
+    <li class="item-a">
+      <div class="Products">
+                        
+        <div class="product1">
+            <div class="product_items">
+                <div class="imgDiv"><img src="p2.webp" alt="headphone"></div>
+                <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                        style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                    time offer</div>
+                <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                    <span class="p2">312 sold</span> <button>-60%</button>
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <div class="rating-container">
+                            <div class="rating-line" onclick="handleRating(event)">
+                                <div class="rating-bar"></div>
+                                <div class="rating-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="font-size: 12px; font-weight: lighter; color: gray;">
+                        In demand</div>
+                    <div>
+                        <div class="rating-container">
+                            <div class="rating-stars" onclick="handleRating(event)">
+                                <span class="star" data-value="1">&#9733;</span>
+                                <span class="star" data-value="2">&#9733;</span>
+                                <span class="star" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                            <span
+                                style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </li>
+    <li class="item-a">
+      <div class="Products">
+                        
+        <div class="product1">
+            <div class="product_items">
+                <div class="imgDiv"><img src="p2.webp" alt="headphone"></div>
+                <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                        style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                    time offer</div>
+                <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                    <span class="p2">312 sold</span> <button>-60%</button>
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <div class="rating-container">
+                            <div class="rating-line" onclick="handleRating(event)">
+                                <div class="rating-bar"></div>
+                                <div class="rating-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="font-size: 12px; font-weight: lighter; color: gray;">
+                        In demand</div>
+                    <div>
+                        <div class="rating-container">
+                            <div class="rating-stars" onclick="handleRating(event)">
+                                <span class="star" data-value="1">&#9733;</span>
+                                <span class="star" data-value="2">&#9733;</span>
+                                <span class="star" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                            <span
+                                style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </li>
+  </ul> -->
+  
+  <div class="product-slider">
+    <div class="slider-wrapper">
+      <!-- Product items -->
+      <div class="product-item">Product 1</div>
+      <div class="product-item">Product 2</div>
+      <div class="product-item">Product 3</div>
+      <div class="product-item">Product 4</div>
+      <div class="product-item">Product 5</div>
+      <!-- Add more product items up to Product 20 -->
+    </div>
+  </div>
+
+
+
+ <script>
+     
+   // Assuming you have buttons or controls to trigger the scrolling
+const sliderWrapper = document.querySelector(".slider-wrapper");
+const scrollLeftBtn = document.querySelector("#scrollLeftBtn");
+const scrollRightBtn = document.querySelector("#scrollRightBtn");
+
+let scrollAmount = 0;
+const scrollStep = 200; // Adjust the step size for scrolling
+
+scrollLeftBtn.addEventListener("click", () => {
+  scrollAmount += scrollStep;
+  sliderWrapper.scroll({
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+});
+
+scrollRightBtn.addEventListener("click", () => {
+  scrollAmount -= scrollStep;
+  sliderWrapper.scroll({
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+});
+
+ </script>
+    </body>
+    </html>

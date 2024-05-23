@@ -1,0 +1,408 @@
+.ASIDE{
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+}
+.left-aside{
+    width: 50%;
+    height: auto;
+}
+.right-aside{
+    width: 45%;
+    height: auto;
+    float: right;
+    right: 30px;
+    height: 600px;
+    overflow: scroll;
+
+}
+.right-aside::-webkit-scrollbar{
+  display: none;
+}
+.left-aside .left-aside1{
+    width: 15%;
+    height: 500px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 0px;
+    overflow: scroll;
+}
+.left-aside .left-aside1::-webkit-scrollbar{
+    display: none;
+}
+.like-color{
+    font-weight: bold;
+    color: orange;
+  
+}
+
+.left-aside .left-aside2{
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    right: 0px;
+    background-color: bisque;
+}
+.left-aside1 div{
+    width: 100%;
+    height: 100px;
+} 
+.left-aside1 div:hover{
+    border: 1px solid black;
+
+}
+.left-aside1 div img{
+    width: 100%;
+    height: 100%;
+}
+.left-aside .left-aside2 img{
+    height: 100%;
+    width: 100%;
+}
+.like{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    right: 5%;
+}
+.like i{
+    font-size: 20px;
+}
+.prev1{
+    height: 50px;
+    top: 45%;
+    border-radius: 50%;
+}
+.next1{
+    height: 50px;
+    top: 45%;
+    width: 50px;
+    border-radius: 50%;
+}
+#productName{
+    width: 100%;
+    position: relative;
+}
+#productName p{
+    width: 95%;
+    font-size: 14px;
+}
+#productName a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    right: 10px;
+}
+.review a:hover{
+    text-decoration: underline;
+}
+.review{
+    width: 100%;
+    position: relative;
+}
+.review span{
+    font-size: 15px;
+    
+}
+.review  .sold{
+    color: gray;
+    font-size: 12px;
+}
+.review span a{
+    color: black;
+    text-decoration: none;
+}
+.review .rating-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: larger;
+  }
+  
+  .rating-label {
+    margin-right: 10px;
+    font-size: larger;
+  }
+  
+  .rating-stars {
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .star.active {
+    color: rgb(0, 0, 0);
+
+  }
+  .review #starR{
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .price{
+    width: 100%;
+    position: relative;
+  }
+  .price button {
+    background-color: white;
+    border-radius: 5px;
+    width: 40px;
+    height: 15px;
+    color: #ff5722;
+    font-size: 9px;
+    margin-left: 5px;
+    border: 1px solid orangered;
+  }
+  .price .p1 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff5722;
+  }
+  
+  .price strike {
+    font-size: 12px;
+    color: gray;
+    margin-left: 5px;
+    padding-top: 2px;
+  }
+  
+  .price .p2 {
+    font-size: 10px;
+    color: gray;
+    padding-top: 2px;
+  }
+  .color{
+    width: 100%; position: relative;
+  }
+  .color div{
+    width: 60px;
+    height: 60px;
+    display: flex;
+  }
+  .color div img{
+    width: 50px;
+    margin-left: 10px;
+    height: 50px;
+  }
+  .color div img:hover{
+    border: 1px solid black;
+  }
+  .size{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
+  .size button{
+    
+    padding: 0px 5px;
+    margin: 10px;
+    border: 1px gray solid;
+    border-radius: 30px;
+    opacity: 0.8;
+  }
+  .size button:hover{
+    border: 1px solid black;
+    opacity: 1;
+  }
+  .select{
+ position: absolute;
+ bottom: 0;    
+}
+.select::-webkit-scrollbar{
+    display: none;
+}
+.addCart button{
+    width: 80%;
+    padding: 10px 10px;
+    background-color: #ff5722;
+    margin-left: 10%;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: 1s;
+}
+.addCart button:hover{
+    opacity: 0.9;
+    transform: scaleX(1.1);
+}
+.shipping{
+  width: 100%;
+  position: relative;
+}
+.shipping div i{
+  color: black;
+  height: 10px;
+  width: 30px;
+}
+.shipping div a{
+  text-decoration: none;
+  color: black;
+}
+.shipping div a:hover{
+  text-decoration: underline;
+}
+.ship1{
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.shipDiv{
+  width: 100%;
+  position: relative;
+}
+.shipDiv .shipDiv1{
+  width: 49%;
+  height: 120px;
+  border-radius: 5px;
+  background-color: rgb(247, 248, 249);
+  padding: 10px;
+
+}
+.shipDiv .shipDiv2{
+  width: 49%;
+  height: 120px;
+  float: right;
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: rgb(247, 248, 249);
+
+}
+.shipDiv .shipDiv1 img{
+  height: 15px;
+  width: 15px;
+}
+.shipDiv .shipDiv1 div{
+  font-size: 13px;
+  color: gray;
+}
+.shipDiv .shipDiv1 div span{
+  color: black;
+}
+.shipDiv .shipDiv2 img{
+  height: 15px;
+  width: 15px;
+}
+.shipDiv .shipDiv2 div{
+  font-size: 13px;
+  color: gray;
+}
+.shipDiv .shipDiv2 div span{
+  color: black;
+}
+.return{
+  width: 100%;
+
+}
+.return img{
+  width: 20px;
+  height: 20px;
+}
+.return a{
+  text-decoration: none;
+  color: rgb(77, 75, 75);
+  font-size: 12px ;
+  font-weight: bold;
+}
+.return a:hover{
+  text-decoration: underline;
+}
+.temu{
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(77, 75, 75);
+}
+.shopping{
+  width: 100%;
+  position: relative;
+  color: green;
+}
+.shopping .shop1{
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+.shopping a{
+  text-decoration: none;
+  color: green;
+}
+.shopping a:hover{
+  text-decoration: underline;
+}
+.shopping ul{
+  color: black;
+}
+.decs{
+  width: 100%;
+  font-size: 14px;
+  color: black;
+}
+.decs1{
+  font-size: 15px;
+  font-weight: bold;
+}
+.decs button{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 0px 10px;
+  font-size: 10px;
+}
+
+.rateStar{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 550px;
+
+}
+.shopP{
+  color: rgb(70, 69, 69);
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.divImage{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 700px;
+}
+.divImage .divimg1{
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+}
+.divImage .divimg1 img{
+  width: 95%;
+  height: 100%;
+}
+.veri{
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 10px;
+}
+.headMain{
+  top:0;
+}
+.single_Products{
+  position: relative;
+  top: 130px;
+}

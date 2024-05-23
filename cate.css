@@ -1,0 +1,169 @@
+.CategarySection{
+    width: 100%;
+    height: 300px;
+}
+.headMain{
+    top: 0;
+}
+.Clothing1{
+    width: 100%;
+    height: 300px;
+}
+.cate1{
+    width: 100%;
+    height: 130px;
+    margin-top: 20px;
+}
+.img1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.img1 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+.con1{
+    color: black;
+    font-size: 12px;
+    padding-top: 5px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.cate2{
+    width: 100%;
+    height: 130px;
+    margin-top: 20px;
+}
+.img2{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.img2 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+.con2{
+    color: black;
+    font-size: 12px;
+    padding-top: 5px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+#aside{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.aside-left{
+    width: 20%;
+    background-color: white;
+    color: black;
+    height: 700px;
+    position: absolute;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+}
+.aside-left::-webkit-scrollbar{
+    display: none;
+}
+.aside-left h2{
+    font: 10;
+    color: black;
+}
+.aside-left h5{
+    font-size: 15px;
+    color: #000;
+    padding-top: 15px;
+    font-weight: normal;
+}
+hr{
+    border: 1px solid gray;
+}
+
+.aside-left ul{
+    text-decoration: none !important;
+}
+
+.aside-left ul a{
+    text-decoration: none !important;
+    padding-left: 0 !important;
+}
+.aside-left ul a li{
+    text-decoration: none !important;
+    color: black;
+    font-size: 12px;
+    margin: 0px 0px 0px !important;
+    list-style: none;;
+
+} 
+.aside-left ul a li input{
+    width: 8px;
+    height: 8px;
+}
+.aside-left ul a li .rad{
+    margin-left: 20px;
+}
+.aside-left ul a li .rad3{
+    margin-left: 22px;
+}
+.aside-left ul a li .rad4{
+    margin-left: 17px;
+}
+.aside-left ul a li .rad2{
+    margin-left: 36px;
+}
+.aside-left ul a li:hover{
+    text-decoration: none !important;
+    color: black;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+.aside-left a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+.aside-right{
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    height: auto;
+    padding-left:20px ;
+}
+.aside-right .TrandingRwo{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.aside-right .TrandingRwo h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.aside-right .TrandingRwo input{
+    border: 1px solid black;
+    background-color: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+.divMainSection{
+    margin-top: 130px;
+}
+.footer_main1{
+    bottom: 0px;
+    margin-top: 1100px;
+}
+
+
+
+
+

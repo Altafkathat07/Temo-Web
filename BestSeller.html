@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagn | shop for Clothing, Shoes, jewelry, Beauty & More </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+   
+    <link rel="stylesheet" href="{{asset('assests/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assests/bestseller.css')}}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headMain{
+    top: 0px;
+}
+.item_section{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 130px;
+}
+.butRowB{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.But_Best{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.But_Best .bestS1{
+ color: black;
+ font-size: 14px;
+ font-weight: 500;
+}
+.But_Best button{
+    font-size: 13px;
+    font-weight: normal;
+    border: 0.5px solid black;
+    border-radius: 30px;
+    color: black;
+    margin-left: 15px;
+    padding: 5px 15px;
+}
+.bestS3,.bestS4{
+    opacity: 0.5;
+}
+.bestS3:hover,.bestS4:hover{
+    opacity: 1;
+}
+.bestS5{
+    font-size: 12px;
+    color: gray;
+ 
+    
+}
+.But_Best .bestS6{
+
+    border: 1px solid black;
+    padding-left: 20px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+.Recommend{
+    width: 230px;
+    height: 500px;
+    overflow: scroll;
+    position: fixed;
+    background-color: white;
+    right: 5%;
+    top: 190px;
+    padding: 10px;
+    padding-left: 20px;
+    text-align: start;
+    align-items: start;
+    border: 1px solid rgb(216, 216, 216);
+    display: none;
+    z-index: 10000;
+}
+.Recommend::-webkit-scrollbar{
+    display: none;
+}
+.Recommend p{
+    font-size: 12.5px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="butRowB">
+        <div class="row">
+         <div class="But_Best">
+          <div><span class="bestS1">Best Seller</span> <button class="bestS2">Overall</button><button class="bestS3">Within last 30 days </button><button class="bestS4">Within last 7 days</button></div>
+          <div><span class="bestS5">Filter by Category</span> <span class="bestS6" onmouseover="show()">Recommended <i class="fa fa-caret-down" aria-hidden="true"></i></span></div>
+
+         </div>
+        </div>
+        <div class="Recommend">
+            <p style="font-weight: bold; font-size: 15px;">Recommended</p>
+            <P>Beauty & Health</P>
+            <P>Women's Clothing</P>
+            <P>Home & Kitchen</P>
+            <P>Men's Clothing</P>
+            <P>Women's Shoes</P>
+            <P>Men's Underware & sleepwear</P>
+            <P>Sports & Outdoors</P>
+            <P>Office & School Supplies</P>
+            <P>Toys & Games</P>
+            <P>Kid's Fashion</P>
+            <P>Electronics</P>
+            <P>Industrial Commercial</P>
+            <P>Pet Supplies</P>
+            <P>Jewelry & Accessories</P>
+            <P>Automotive</P>
+            <p>Women's Curve+Plus</p>
+            <p>Musical Instruments</p>
+            <p>Bags & Luggage</p>
+            <p>Health & Household</p>
+            <p>Patio, lawn & Garden</p>
+            <p>Tools & home Improvement</p>
+            <p>Appliances</p>
+            <p>Women's Lingerie & Lounge</p>
+            <p>Baby & Maternity</p>
+            <p>Men's Big & Tall</p>
+            <p>Smart Home</p>
+            <p>Arts Crafts & Sewing</p>
+            <p>Men's Shoes</p>
+            <p>Cell Phones & Accessories</p>
+            <p>Kid's Shoes</p>
+            <p>Men's wear</p>
+        </div>
+        </div>
+      
+        <div class="row mt-5">
+            <div class="Products">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                   <div class="product1">
+                      <div class="product_items">
+                         <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                         <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                            style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                            time offer
+                         </div>
+                         <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                            <span class="p2">312 sold</span> <button>-60%</button>
+                         </div>
+                         <div class="rating">
+                            <div class="rate">
+                               <div class="rating-container">
+                                  <div class="rating-line" onclick="handleRating(event)">
+                                     <div class="rating-bar"></div>
+                                     <div class="rating-fill"></div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div
+                               style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                               In demand
+                            </div>
+                            <div>
+                               <div class="rating-container">
+                                  <div class="rating-stars" onclick="handleRating(event)">
+                                     <span class="star" data-value="1">&#9733;</span>
+                                     <span class="star" data-value="2">&#9733;</span>
+                                     <span class="star" data-value="3">&#9733;</span>
+                                     <span class="star" data-value="4">&#9733;</span>
+                                     <span class="star" data-value="5">&#9733;</span>
+                                  </div>
+                                  <span
+                                     style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+         
+        </div>
+        </div>
+        <div class="row mt-5">
+            <div class="Products">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                   <div class="product1">
+                      <div class="product_items">
+                         <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                         <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                            style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                            time offer
+                         </div>
+                         <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                            <span class="p2">312 sold</span> <button>-60%</button>
+                         </div>
+                         <div class="rating">
+                            <div class="rate">
+                               <div class="rating-container">
+                                  <div class="rating-line" onclick="handleRating(event)">
+                                     <div class="rating-bar"></div>
+                                     <div class="rating-fill"></div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div
+                               style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                               In demand
+                            </div>
+                            <div>
+                               <div class="rating-container">
+                                  <div class="rating-stars" onclick="handleRating(event)">
+                                     <span class="star" data-value="1">&#9733;</span>
+                                     <span class="star" data-value="2">&#9733;</span>
+                                     <span class="star" data-value="3">&#9733;</span>
+                                     <span class="star" data-value="4">&#9733;</span>
+                                     <span class="star" data-value="5">&#9733;</span>
+                                  </div>
+                                  <span
+                                     style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+         
+        </div>
+        </div>
+        <div class="row mt-5">
+            <div class="Products">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                   <div class="product1">
+                      <div class="product_items">
+                         <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                         <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                            style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                            time offer
+                         </div>
+                         <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                            <span class="p2">312 sold</span> <button>-60%</button>
+                         </div>
+                         <div class="rating">
+                            <div class="rate">
+                               <div class="rating-container">
+                                  <div class="rating-line" onclick="handleRating(event)">
+                                     <div class="rating-bar"></div>
+                                     <div class="rating-fill"></div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div
+                               style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                               In demand
+                            </div>
+                            <div>
+                               <div class="rating-container">
+                                  <div class="rating-stars" onclick="handleRating(event)">
+                                     <span class="star" data-value="1">&#9733;</span>
+                                     <span class="star" data-value="2">&#9733;</span>
+                                     <span class="star" data-value="3">&#9733;</span>
+                                     <span class="star" data-value="4">&#9733;</span>
+                                     <span class="star" data-value="5">&#9733;</span>
+                                  </div>
+                                  <span
+                                     style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+         
+        </div>
+        </div>
+        <div class="row mt-5">
+            <div class="Products">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                   <div class="product1">
+                      <div class="product_items">
+                         <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                         <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                            style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                            time offer
+                         </div>
+                         <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                            <span class="p2">312 sold</span> <button>-60%</button>
+                         </div>
+                         <div class="rating">
+                            <div class="rate">
+                               <div class="rating-container">
+                                  <div class="rating-line" onclick="handleRating(event)">
+                                     <div class="rating-bar"></div>
+                                     <div class="rating-fill"></div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div
+                               style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                               In demand
+                            </div>
+                            <div>
+                               <div class="rating-container">
+                                  <div class="rating-stars" onclick="handleRating(event)">
+                                     <span class="star" data-value="1">&#9733;</span>
+                                     <span class="star" data-value="2">&#9733;</span>
+                                     <span class="star" data-value="3">&#9733;</span>
+                                     <span class="star" data-value="4">&#9733;</span>
+                                     <span class="star" data-value="5">&#9733;</span>
+                                  </div>
+                                  <span
+                                     style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product1">
+                       <div class="product_items">
+                          <div class="imgDiv"><img src="{{asset('assests/p2.webp')}}" alt="headphone"></div>
+                          <div class="imgDiv2">SUMMER <span class="sale1">SALE</span> <span
+                             style="color: rgb(192, 188, 188);  font-weight: lighter;">|</span> limited
+                             time offer
+                          </div>
+                          <div class="price"><span class="p1">$1.79</span> <strike>$4.49</strike>
+                             <span class="p2">312 sold</span> <button>-60%</button>
+                          </div>
+                          <div class="rating">
+                             <div class="rate">
+                                <div class="rating-container">
+                                   <div class="rating-line" onclick="handleRating(event)">
+                                      <div class="rating-bar"></div>
+                                      <div class="rating-fill"></div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div
+                                style="font-size: 12px; font-weight: lighter; color: gray; padding-left: 15px;">
+                                In demand
+                             </div>
+                             <div>
+                                <div class="rating-container">
+                                   <div class="rating-stars" onclick="handleRating(event)">
+                                      <span class="star" data-value="1">&#9733;</span>
+                                      <span class="star" data-value="2">&#9733;</span>
+                                      <span class="star" data-value="3">&#9733;</span>
+                                      <span class="star" data-value="4">&#9733;</span>
+                                      <span class="star" data-value="5">&#9733;</span>
+                                   </div>
+                                   <span
+                                      style="color: gray; font-size: 12px; padding-left: 10px; ">(302)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+         
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+function show(){
+    let box = document.querySelector(".Recommend");
+    if(show){
+        if(!show){
+    box.style.display="none";
+}
+        box.style.display="block";
+}else{
+    box.style.display="";
+}
+}
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

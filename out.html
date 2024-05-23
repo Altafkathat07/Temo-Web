@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Flip Countdown</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.countdown-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.countdown {
+  display: flex;
+}
+
+.digit {
+  position: relative;
+  width: 90px;
+  height: 120px;
+  margin: 0 10px;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #3498db;
+}
+
+.flip-card-back {
+  background-color: #f39c12;
+  transform: rotateY(180deg);
+}
+
+.digit-value {
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.digit-label {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .countdown {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+  </style>
+
+</head>
+<body>
+  <div class="countdown-container">
+    <div class="countdown">
+      <div class="digit" id="daysFlip">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="digit-value" id="daysValue">00</div>
+              <div class="digit-label">Days</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="digit-value" id="daysValueBack">00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="digit" id="hoursFlip">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="digit-value" id="hoursValue">00</div>
+              <div class="digit-label">Hours</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="digit-value" id="hoursValueBack">00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="digit" id="minutesFlip">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="digit-value" id="minutesValue">00</div>
+              <div class="digit-label">Minutes</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="digit-value" id="minutesValueBack">00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="digit" id="secondsFlip">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="digit-value" id="secondsValue">00</div>
+              <div class="digit-label">Seconds</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="digit-value" id="secondsValueBack">00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  // Set the date for the countdown (adjust the date and time as needed)
+  const countdownDate = new Date("2023-12-31T23:59:59").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+
+    if (distance <= 0) {
+      clearInterval(interval);
+      // Add any actions after the countdown reaches 0
+    } else {
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      updateDigit("daysValue", "daysValueBack", days);
+      updateDigit("hoursValue", "hoursValueBack", hours);
+      updateDigit("minutesValue", "minutesValueBack", minutes);
+      updateDigit("secondsValue", "secondsValueBack", seconds);
+    }
+  }
+
+  function updateDigit(frontId, backId, value) {
+    const frontElement = document.getElementById(frontId);
+    const backElement = document.getElementById(backId);
+
+    backElement.innerText = value < 10 ? "0" + value : value;
+    frontElement.classList.add("flipped");
+
+    setTimeout(() => {
+      frontElement.innerText = value < 10 ? "0" + value : value;
+      frontElement.classList.remove("flipped");
+    }, 500);
+  }
+
+  updateCountdown();
+  const interval = setInterval(updateCountdown, 1000);
+});
+
+</script>
+</body>
+</html>
